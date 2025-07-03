@@ -1,23 +1,15 @@
 import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TextArea from './components/TextArea';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='root'>
+    <Navbar title="TextUtils"></Navbar>
+    <TextArea heading="Enter text to make changes"></TextArea>
     </div>
   );
 }
